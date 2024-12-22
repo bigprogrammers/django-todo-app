@@ -90,7 +90,7 @@ django-todo-app/
 
 ## 🖼️ Screenshots  
 ### Home Page  
-![Home Page](screenshot.png)  
+![Home Page](Screenshot.png)  
 
 ### Register
 ![Add Task](register.png)  
