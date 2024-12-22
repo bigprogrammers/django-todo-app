@@ -1,5 +1,3 @@
-
-```markdown
 # Django To-Do App  
 
 ## 📋 Overview  
