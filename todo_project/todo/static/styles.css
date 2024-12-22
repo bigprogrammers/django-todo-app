@@ -1,0 +1,261 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(180deg, #6a4c9c, #5c6bc0);
+    color: white;
+    padding: 30px 20px;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.sidebar:hover {
+    transform: scale(1.05);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-top: 5px;
+}
+
+.sidebar-actions {
+    margin-top: auto;
+    width: 100%;
+}
+
+.btn-add {
+    background-color: #fff;
+    color: #5c6bc0;
+    border: none;
+    padding: 12px 25px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-add:hover {
+    background-color: #f7f7f7;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 40px 30px;
+    overflow-y: auto;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.search-input:focus {
+    border-color: #5c6bc0;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 12px 0;
+    padding: 18px 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.todo-item:hover {
+    transform: scale(1.03);
+    background-color: #f0f7fc;
+}
+
+.todo-text {
+    flex-grow: 1;
+    font-size: 18px;
+    color: #444;
+    font-weight: 500;
+}
+
+.todo-actions i {
+    font-size: 22px;
+    color: #5c6bc0;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.todo-actions i:hover {
+    color: #3f4a89;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.todo-item {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 90%;
+    }
+}
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.auth-container {
+    background-color: #f7f9fc; /* Light background color */
+    height: 100vh;
+    width: 100%;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h3 {
+    color: #444;
+}
+
+.btn-primary {
+    background-color: #5c6bc0;
+    border-color: #5c6bc0;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3f4a89;
+    border-color: #3f4a89;
+}
+
+a {
+    color: #5c6bc0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+ul.errorlist.nonfield {
+    color: red;
+}
