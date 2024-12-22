@@ -90,10 +90,13 @@ django-todo-app/
 
 ## 🖼️ Screenshots  
 ### Home Page  
-![Home Page](https://via.placeholder.com/800x400.png?text=Screenshot+of+Home+Page)  
+![Home Page](screenshot.png)  
 
-### Add/Edit Task  
-![Add Task](https://via.placeholder.com/800x400.png?text=Screenshot+of+Add+Task+Page)  
+### Register
+![Add Task](register.png)  
+
+### Login
+![Add Task](login.png)  
 
 ---
 
