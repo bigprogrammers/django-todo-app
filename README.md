@@ -5,6 +5,10 @@ This repository contains the source code for a simple To-Do application built wi
 
 ---
 
+[![Django To-Do App Demo](thumb.png)](https://www.youtube.com/watch?v=7tGZOq4ODNM)  
+
+Click the image or [here](https://www.youtube.com/watch?v=7tGZOq4ODNM) to watch the video on YouTube.
+
 ## 🚀 Features  
 - Add new tasks  
 - View all tasks in a list  
